@@ -1,12 +1,22 @@
 import { createPage } from "../utils/pages.js";
 
-export function proyectsSections(proyects) {
+export function projectsSections(projects) {
     let html = ``
     html += "<h2 class=\"mb-4 text-center text-primary fw-bold\">Secciones de proyectos:</h2>";
     html += "<ul class=\"list-group list-group-flush mb-5 mx-auto shadow-sm rounded-3\" style=\"max-width: 600px;\">";
-    proyects.forEach(p => {
+
+    const uniqueSections = [];
+    const seenSections = new Set();
+    projects.forEach(p => {
+        if (!seenSections.has(p.section)) {
+            seenSections.add(p.section);
+            uniqueSections.push({ section: p.section, section_name: p.section_name });
+        }
+    });
+
+    uniqueSections.forEach(p => {
         html += `<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center p-3">
-            <a class="text-decoration-none text-dark stretched-link fw-semibold fs-5" href="/proyects/${p.section}">${p.section_name}</a>
+            <a class="text-decoration-none text-dark stretched-link fw-semibold fs-5" href="/projects/${p.section}">${p.section_name}</a>
             <span class="badge bg-primary rounded-pill px-3 py-2">&rarr;</span>
         </li>`
     });
@@ -15,9 +25,9 @@ export function proyectsSections(proyects) {
 }
 
 
-export function proyectsView(proyects) {
+export function projectsView(projects) {
     let html = `<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">`
-    proyects.forEach(p => {
+    projects.forEach(p => {
         html += `
         <div class="col">
             <div class="card h-100 shadow border-0 rounded-4 overflow-hidden">

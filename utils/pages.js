@@ -15,7 +15,7 @@ export function createPage(content) {
                         <a class="nav-link px-4 py-2 rounded-pill text-primary border border-primary shadow-sm" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4 py-2 rounded-pill bg-primary text-white shadow-sm" href="/proyects">Proyectos</a>
+                        <a class="nav-link px-4 py-2 rounded-pill bg-primary text-white shadow-sm" href="/projects">Proyectos</a>
                     </li>
                 </ul>
             </nav>
