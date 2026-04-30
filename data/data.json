@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Red social",
+        "description": "Una pequeña y amigable red social",
+        "link": "http://redsocial.com",
+        "img": "https://picsum.photos/400/225",
+        "technologies": [
+            "React",
+            "Tailwind",
+            "Supabase"
+        ],
+        "section": "mobile",
+        "section_name": "Mobile",
+        "deleted": false
+    },
+    {
+        "name": "Portfolio",
+        "description": "Portfolio personal",
+        "link": "http://portfolio.com",
+        "img": "https://picsum.photos/400/225",
+        "technologies": [
+            "Vue",
+            "Tailwind"
+        ],
+        "section": "landingpage",
+        "section_name": "Landing Page",
+        "deleted": false
+    },
+    {
+        "name": "Super Casting",
+        "description": "Plataforma para postularse a castings",
+        "link": "http://supercasting.com",
+        "img": "https://picsum.photos/400/225",
+        "technologies": [
+            "PHP",
+            "Bootstrap",
+            "Laravel",
+            "MySQL"
+        ],
+        "section": "web-app",
+        "section_name": "Web App",
+        "deleted": false
+    },
+    {
+        "name": "Supermarket",
+        "description": "Un supermercado virtual",
+        "link": "http://supermarket.com",
+        "img": "https://picsum.photos/400/225",
+        "technologies": [
+            "PostgreSQL",
+            "Node",
+            "Express"
+        ],
+        "section": "e-commerce",
+        "section_name": "E-commerce",
+        "deleted": false
+    },
+    {
+        "name": "Pajaro Volador",
+        "description": "Un juego sencillo",
+        "link": "http://pajaritovolador.com",
+        "img": "https://picsum.photos/400/225",
+        "technologies": [
+            "Unity",
+            "C#"
+        ],
+        "section": "games",
+        "section_name": "Games",
+        "deleted": false
+    }
+]
