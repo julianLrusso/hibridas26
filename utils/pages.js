@@ -7,21 +7,27 @@ export function createPage(content) {
         <title>TP1 - Aplicaciones híbridas - López Russo Julián</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
-        <div class='container' >
-            <nav>
-                <ul class="nav nav-tabs">
+    <body class="bg-light">
+        <div class="container mt-5 mb-5 p-5 bg-white shadow rounded-4">
+            <nav class="mb-5 border-bottom pb-3">
+                <ul class="nav nav-pills justify-content-center gap-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
+                        <a class="nav-link px-4 py-2 rounded-pill text-primary border border-primary shadow-sm" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/proyects">Proyectos</a>
+                        <a class="nav-link px-4 py-2 rounded-pill bg-primary text-white shadow-sm" href="/proyects">Proyectos</a>
                     </li>
                 </ul>
             </nav>
-            <h1 class="m-3">TP1 - Aplicaciones híbridas</h1>
-            ${content}
-            <footer>López Russo Julián</footer>
+            <div class="text-center py-4">
+                <h1 class="display-4 fw-bold text-primary mb-4">TP1 - Aplicaciones híbridas</h1>
+            </div>
+            
+            <div class="mt-4">
+                ${content}
+            </div>
+
+            <footer class="mt-5 text-center text-muted fw-semibold border-top pt-4">López Russo Julián</footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj06Wgp+Ym6JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
